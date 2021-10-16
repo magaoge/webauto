@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [webtest]">
+  <parameter name="apacheDocumentRoot" value="C:\Users\MAG\OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc\Desktop\webauto"/>
+  <parameter name="host" value="http://localhost:63342"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="com.lemon.webauto.report.CustomListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Register(failed)">
+    <classes>
+      <class name="com.lemon.webauto.day05.RegisterCase">
+        <methods>
+          <include name="testNegativeCases" invocation-numbers="2 3"/>
+          <include name="init"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.lemon.webauto.day05.RegisterCase -->
+    </classes>
+  </test> <!-- Register(failed) -->
+</suite> <!-- Failed suite [webtest] -->

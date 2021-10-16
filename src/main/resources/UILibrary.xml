@@ -1,0 +1,15 @@
+<Pages>
+    <!--定义一个Page对象-->
+    <Page keyword="注册页面">
+        <!--keyword：页面元素关键字，by：页面定位方法，value：定位器的值-->
+        <UIElement keyword = "接口类型选择" by="id" value="HTTP"></UIElement>
+        <UIElement keyword = "用户名" by="id" value="username"></UIElement>
+        <UIElement keyword = "密码" by="id" value="password"></UIElement>
+        <UIElement keyword = "登录按钮" by="id" value="js-btn-login"></UIElement>
+    </Page>
+    <Page keyword="断言">
+        <!--keyword：页面元素关键字，by：页面定位方法，value：定位器的值-->
+        <UIElement keyword = "信息" by="id" value="Msg"></UIElement>
+
+    </Page>
+</Pages>

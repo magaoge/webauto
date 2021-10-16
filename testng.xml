@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="webtest">
+    <test name="Register">
+        <classes>
+            <class name="com.lemon.webauto.day05.RegisterCase"/>
+        </classes>
+    </test>
+    <test name="Register2">
+        <classes>
+
+        </classes>
+    </test>
+
+    <parameter name="browserType" value="chrome"></parameter>
+    <parameter name="apacheDocumentRoot" value="D:\project\webauto\target\surefire-reports"></parameter>
+    <parameter name="host" value="http://localhost:80"></parameter>
+
+    <listeners>
+        <!--实现一个监听器，监听用例执行情况-->
+        <listener class-name = "com.lemon.webauto.report.CustomListener"></listener>
+        <!--reportng报表生成类-->
+        <listener class-name = "org.uncommons.reportng.HTMLReporter"></listener>
+    </listeners>
+</suite>
