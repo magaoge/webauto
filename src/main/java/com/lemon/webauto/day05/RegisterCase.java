@@ -57,24 +57,24 @@ public class RegisterCase extends Base {
 //        webDriver.findElement(By.id("js-btn-login")).click();
 
         //获取响应结果,如果存在页面跳转之类需要加载元素的行为，最好加上一个显式等待
-        WebDriverWait wait = new WebDriverWait(webDriver,5);
-        boolean isDirectedToLogin = true;
-        try {
-            wait.until(ExpectedConditions.textToBePresentInElement(
-                    UILibraryUtil.getElementByKeyword("断言", "信息"),expcted));
-//            wait.until(ExpectedConditions.textToBePresentInElement(UILibraryUtil.getElementByKeyword("断言","信息").getText());
-
-        } catch (Exception e) {
-            System.out.println("实际结果与预期不符");
-            e.printStackTrace();
-        }
-        Assert.assertTrue(isDirectedToLogin);
+//        WebDriverWait wait = new WebDriverWait(webDriver,5);
+//        boolean isDirectedToLogin = true;
+//        try {
+//            wait.until(ExpectedConditions.textToBePresentInElement(
+//                    UILibraryUtil.getElementByKeyword("断言", "信息"),expcted));
+////            wait.until(ExpectedConditions.textToBePresentInElement(UILibraryUtil.getElementByKeyword("断言","信息").getText());
+//
+//        } catch (Exception e) {
+//            System.out.println("实际结果与预期不符");
+//            e.printStackTrace();
+//        }
+//        Assert.assertTrue(isDirectedToLogin);
         //获取响应结果
 //        String actual = UILibraryUtil.getElementByKeyword("断言","信息").getText();
         WebElement actual = UILibraryUtil.getElementByKeyword("断言", "信息");
         Assertion.assertTextPresent(actual,expcted);
 
-        Assert.assertEquals(actual,expcted);
+//        Assert.assertEquals(actual,expcted);
     }
 
     @DataProvider
